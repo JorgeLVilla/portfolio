@@ -1,6 +1,7 @@
 import { ThemeProvider } from "styled-components";
 import GlobalStyles from "./components/styles/Global";
 import Nav from "./components/Nav";
+import Home from "./components/Home";
 
 const theme = {
   colors: {
@@ -16,6 +17,7 @@ function App() {
       <>
         <GlobalStyles />
         <Nav />
+        <Home />
       </>
     </ThemeProvider>
   );
