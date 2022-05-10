@@ -1,8 +1,6 @@
 import { ThemeProvider } from "styled-components";
-import Nav from "./components/Nav";
 import GlobalStyles from "./components/styles/Global";
-
-// import { Container } from "./components/styles/Container.styled";
+import Nav from "./components/Nav";
 
 const theme = {
   colors: {
@@ -17,13 +15,9 @@ function App() {
     <ThemeProvider theme={theme}>
       <>
         <GlobalStyles />
-        <Nav></Nav>
+        <Nav />
       </>
     </ThemeProvider>
-
-    /* <div className="App">
-
-  </div>; */
   );
 }
 
