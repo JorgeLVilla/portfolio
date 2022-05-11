@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import darkBack from "./darkDot.png";
+// import grayBack from "./grayDot.png";
 
 const GlobalStyles = createGlobalStyle`
     * {
