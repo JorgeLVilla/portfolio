@@ -24,8 +24,9 @@ export const ProjectsContainer = styled.div`
 `;
 
 export const SingleProjectCont = styled.div`
-  height: 550px;
-  width: 325px;
+  height: 570px;
+  width: 375px;
+  min-width: 300px;
   background-color: #1a1d23;
   /* background-color: #000000; */
   border-radius: 25px;
