@@ -5,7 +5,8 @@ export const StyledNav = styled.div`
   color: #fefefe;
   display: flex;
   justify-content: center;
-  border: solid red;
+  /* border: solid red; */
+  max-height: 70px;
 
   div {
     display: flex;
@@ -16,25 +17,30 @@ export const StyledNav = styled.div`
   }
 
   p {
-    font-size: 30px;
+    font-size: 20px;
   }
 
   img {
-    height: 2em;
+    height: 25px;
     align-self: center;
+    margin-left: 10px;
   }
 
   .homeIcon img {
-    margin: 5px 25px;
+    margin: 10px 35px;
     padding: 0 5px;
     position: absolute;
     left: 0;
-    height: 2.5em;
+    height: 50px;
     align-self: center;
   }
 
+  .socialIcons {
+    position: absolute;
+    right: 0;
+    margin-right: 200px;
+  }
   .socialIcons img {
-    display: flex;
-    justify-items: end;
+    margin-left: 20px;
   }
 `;
