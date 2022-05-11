@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 export const StyledProjects = styled.div`
-  height: 80vh;
-  /* border: solid blue; */
+  height: 90vh;
 
   h1 {
     display: flex;
@@ -10,7 +9,7 @@ export const StyledProjects = styled.div`
     color: #fefefe;
     font-size: 95px;
     /* border: solid white; */
-    margin-top: 0;
+    margin-top: 20px;
   }
 
   h3 {
@@ -20,7 +19,8 @@ export const StyledProjects = styled.div`
 
 export const ProjectsContainer = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const SingleProjectCont = styled.div`
@@ -29,7 +29,10 @@ export const SingleProjectCont = styled.div`
   background-color: #1a1d23;
   /* background-color: #000000; */
   border-radius: 25px;
-  margin-top: 30px;
+  margin-top: 50px;
+  margin-left: 80px;
+  margin-right: 80px;
+  align-items: center;
   /* border: solid white; */
 
   img {
@@ -41,7 +44,7 @@ export const SingleProjectCont = styled.div`
   h1,
   h3 {
     margin: 0 auto;
-    padding: 0 25px;
+    padding: 0 10px;
     text-align: center;
   }
 

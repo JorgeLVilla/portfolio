@@ -15,7 +15,7 @@ export const StyledHome = styled.div`
     margin-left: 20px;
     padding: 0;
     height: 8em;
-    border: solid blue;
+    /* border: solid blue; */
     display: flex;
     justify-content: center;
     align-content: center;
@@ -27,17 +27,18 @@ export const StyledHome = styled.div`
     color: #fefefe;
     margin: 0 0;
     padding: 0 0;
-    border: solid blue;
+    /* border: solid blue; */
   }
 
   h1 {
-    font-size: 90px;
+    font-size: 80px;
   }
 
   h5 {
-    font-size: 25px;
+    font-size: 22.25px;
   }
   img {
-    height: 30em;
+    margin-left: 80px;
+    height: 480px;
   }
 `;

@@ -3,6 +3,8 @@ import GlobalStyles from "./components/styles/Global";
 import Nav from "./components/Nav";
 import Home from "./components/Home";
 import Projects from "./components/Projects";
+import About from "./components/About";
+// import ScrollDown from "./components/ScrollDown";
 
 const theme = {
   colors: {
@@ -19,6 +21,7 @@ function App() {
         <GlobalStyles />
         <Nav />
         <Home />
+        <About />
         <Projects />
       </>
     </ThemeProvider>
