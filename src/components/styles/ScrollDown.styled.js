@@ -4,6 +4,7 @@ export const StyledScroll = styled.div`
   display: flex;
   justify-content: center;
   /* border: solid white; */
+  align-items: center;
 
   p {
     font-size: 15px;

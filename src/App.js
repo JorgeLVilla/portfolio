@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import Projects from "./components/Projects";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import ParticlesBack from "./components/ParticlesBack";
 // import ScrollDown from "./components/ScrollDown";
 
 const theme = {
@@ -19,6 +20,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <>
+        <ParticlesBack />
         <GlobalStyles />
         <Nav />
         <Home />

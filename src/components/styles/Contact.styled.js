@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledContact = styled.div`
   height: 80vh;
-  border: solid white;
+
   h1 {
     font-size: 90px;
     text-align: center;
