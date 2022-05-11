@@ -1,7 +1,5 @@
 import { StyledHome } from "./styles/Home.styled";
 import heroIcon from "../assets/heroIcon.svg";
-import keyboardIcon from "../assets/keyboardIcon.svg";
-import wolfIcon from "../assets/wolfIcon.svg";
 import ScrollDown from "./ScrollDown";
 
 const Home = () => {

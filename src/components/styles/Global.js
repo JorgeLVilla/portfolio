@@ -11,7 +11,7 @@ const GlobalStyles = createGlobalStyle`
         /* background: ${({ theme }) => theme.colors.body}; */
         height: 200vh;
         font-size: 1.15em;
-        background-image: url(${darkBack});
+        /* background-image: url(${darkBack}); */
         background-position: center;
         background-size: cover;
     }

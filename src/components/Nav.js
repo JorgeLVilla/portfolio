@@ -3,7 +3,6 @@ import avatarIcon from "../assets/avatarIcon.svg";
 import folderIcon from "../assets/folderIcon.svg";
 import mailIcon from "../assets/mailIcon.svg";
 import maletaIcon from "../assets/maletaIcon.svg";
-import wolfIcon from "../assets/wolfIcon.svg";
 import githubIcon from "../assets/githubIcon.svg";
 import twitter2 from "../assets/twitterIcon.svg";
 import keyboardIcon from "../assets/keyboardIcon.svg";
