@@ -6,12 +6,13 @@ import maletaIcon from "../assets/maletaIcon.svg";
 import wolfIcon from "../assets/wolfIcon.svg";
 import githubIcon from "../assets/githubIcon.svg";
 import twitter2 from "../assets/twitterIcon.svg";
+import keyboardIcon from "../assets/keyboardIcon.svg";
 
 const Nav = () => {
   return (
     <StyledNav>
       <div className="homeIcon">
-        <img src={wolfIcon} alt="wolf icon" />
+        <img src={keyboardIcon} alt="wolf icon" />
       </div>
 
       <div>

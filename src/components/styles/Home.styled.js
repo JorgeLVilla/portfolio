@@ -5,7 +5,7 @@ export const StyledHome = styled.div`
   align-content: center;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 90vh;
 
   .hello {
     display: flex;
@@ -31,11 +31,11 @@ export const StyledHome = styled.div`
   }
 
   h1 {
-    font-size: 130px;
+    font-size: 90px;
   }
 
   h5 {
-    font-size: 40px;
+    font-size: 25px;
   }
   img {
     height: 30em;

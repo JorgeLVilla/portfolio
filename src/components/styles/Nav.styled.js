@@ -5,6 +5,7 @@ export const StyledNav = styled.div`
   color: #fefefe;
   display: flex;
   justify-content: center;
+  border: solid red;
 
   div {
     display: flex;
@@ -15,7 +16,7 @@ export const StyledNav = styled.div`
   }
 
   p {
-    font-size: 1.3em;
+    font-size: 30px;
   }
 
   img {
