@@ -15,8 +15,8 @@ export const data = {
       "Building this app was a fun challenge I started for myself. I wanted to challenge myself to build something in React that would test my abilities to follow a strict design, and functionality. I also used redux to manage the many states that need to be handled throughout the app. In this clone, you can also create a log in, through Firebase authenthication.",
   },
   gameApp: {
-    title: "Reactoads Party Pack",
+    title: "Reactoads Party",
     description:
-      "The Party Pack app was one of the more challenging projects I've worked on in my apprenticeship. We were challenged to make an app using React Native. We used expo to use the phone emulator while we built the app. We created a collection of mini games that use the phone's sensors, and we will continue to add games. I hope you have fun playing it. ",
+      "The Party Pack app was one of the more challenging projects I've worked on in my apprenticeship. We were challenged to make an app using React Native. We used expo to use the phone emulator while we built the app. We created a collection of mini games that use the phone's sensors as the controller. We will continue to add games. I hope you have fun playing it. ",
   },
 };

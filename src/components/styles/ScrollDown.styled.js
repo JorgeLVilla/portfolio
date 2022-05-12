@@ -3,16 +3,15 @@ import styled from "styled-components";
 export const StyledScroll = styled.div`
   display: flex;
   justify-content: center;
-  /* border: solid white; */
   align-items: center;
 
   p {
-    font-size: 15px;
+    font-size: 20px;
     color: #fefefe;
   }
 
   img {
     margin-left: 10px;
-    height: 20px;
+    height: 30px;
   }
 `;

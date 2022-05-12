@@ -4,16 +4,14 @@ export const StyledAbout = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 75vh;
-  /* border: solid white; */
+  height: 85vh;
+  width: 80vw;
 
   h1 {
     display: flex;
     justify-content: center;
     color: #fefefe;
     font-size: 95px;
-    /* border: solid white; */
-    /* margin-top: 20px; */
   }
 
   p {
@@ -33,13 +31,11 @@ export const StyledAbout = styled.div`
   .aboutIcon {
     height: 400px;
     margin-top: 225px;
-    /* border: solid white; */
   }
 
   .deskIcon {
     height: 300px;
     margin-right: 100px;
     margin-bottom: 200px;
-    /* border: solid white; */
   }
 `;

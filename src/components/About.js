@@ -1,17 +1,42 @@
 import { StyledAbout } from "./styles/About.styled";
 import aboutIcon from "../assets/aboutIcon.svg";
 import deskIcon from "../assets/deskIcon.svg";
+import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
+
+const aboutVariant = {
+  hidden: {
+    y: "20vh",
+    opacity: 0,
+  },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.8,
+    },
+  },
+};
 
 const About = () => {
+  const [aboutContainerRef, aboutContainerInView] = useInView({
+    threshold: 0.5,
+    triggerOnce: true,
+  });
+
   return (
-    <StyledAbout>
+    <StyledAbout ref={aboutContainerRef}>
       <img
         className="aboutIcon"
         src={aboutIcon}
         alt="person on couch with cat"
       />
-      <div>
-        <h1>About.</h1>
+      <motion.div
+        variants={aboutVariant}
+        initial="hidden"
+        animate={aboutContainerInView ? "visible" : "hidden"}
+      >
+        <h1 id="about-section">About.</h1>
         <p>
           I am a Front-End Developer living in San Diego, California. I am very
           passionate about everything that I do, and love to create things with
@@ -27,7 +52,7 @@ const About = () => {
           Front-End development.
         </p>
         <h3>Let's create something awesome!</h3>
-      </div>
+      </motion.div>
       <img className="deskIcon" src={deskIcon} alt="person working on desk" />
     </StyledAbout>
   );
