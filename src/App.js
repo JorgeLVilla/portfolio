@@ -1,12 +1,14 @@
 import { ThemeProvider } from "styled-components";
 import GlobalStyles from "./components/styles/Global";
-import Nav from "./components/Nav";
+import Nav from "./components/Nav/Nav.js";
 import Home from "./components/Home";
 import Projects from "./components/Projects";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import ParticlesBack from "./components/ParticlesBack";
-// import ScrollDown from "./components/ScrollDown";
+import { ContainerContent } from "./components/styles/ContainerContent.styled";
+import { ContainerNav } from "./components/styles/ContainerNav.styled";
+import "./App.css";
 
 const theme = {
   colors: {
@@ -22,11 +24,15 @@ function App() {
       <>
         <ParticlesBack />
         <GlobalStyles />
-        <Nav />
-        <Home />
-        <About />
-        <Projects />
-        <Contact />
+        <ContainerNav>
+          <Nav />
+        </ContainerNav>
+        <ContainerContent>
+          <Home />
+          <About />
+          <Projects />
+          <Contact />
+        </ContainerContent>
       </>
     </ThemeProvider>
   );

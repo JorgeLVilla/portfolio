@@ -1,6 +1,4 @@
 import { createGlobalStyle } from "styled-components";
-import darkBack from "./darkDot.png";
-// import grayBack from "./grayDot.png";
 
 const GlobalStyles = createGlobalStyle`
     * {
@@ -8,12 +6,12 @@ const GlobalStyles = createGlobalStyle`
     }
 
     body {
-        /* background: ${({ theme }) => theme.colors.body}; */
-        height: 200vh;
         font-size: 1.15em;
-        /* background-image: url(${darkBack}); */
+        background-color: #141414;
+
         background-position: center;
         background-size: cover;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
 `;
 

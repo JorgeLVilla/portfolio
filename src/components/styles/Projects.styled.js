@@ -1,19 +1,33 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 export const StyledProjects = styled.div`
-  height: 90vh;
+  height: 100vh;
 
   h1 {
     display: flex;
     justify-content: center;
     color: #fefefe;
     font-size: 95px;
-    /* border: solid white; */
     margin-top: 20px;
+    margin-bottom: 0;
   }
 
   h3 {
     color: #fefefe;
+  }
+  .pokeLineProj {
+    width: 188px;
+    margin: 0 auto;
+  }
+
+  .movieLineProj {
+    width: 160px;
+    margin: 0 auto;
+  }
+
+  .gameLineProj {
+    width: 230px;
+    margin: 0 auto;
   }
 `;
 
@@ -21,25 +35,27 @@ export const ProjectsContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 100px;
 `;
 
 export const SingleProjectCont = styled.div`
-  height: 570px;
-  width: 375px;
+  height: 600px;
+  width: 300px;
   min-width: 300px;
   background-color: #1a1d23;
-  /* background-color: #000000; */
   border-radius: 25px;
   margin-top: 50px;
   margin-left: 80px;
   margin-right: 80px;
   align-items: center;
-  /* border: solid white; */
 
   img {
-    height: 35%;
-    width: 100%;
+    height: 31%;
     border-radius: 15px;
+  }
+
+  .gameImgSize {
+    margin: 0px 0px;
   }
 
   h1,
@@ -52,12 +68,10 @@ export const SingleProjectCont = styled.div`
   h1 {
     font-size: 25px;
     margin-top: 15px;
-    margin-bottom: 5px;
-    text-decoration: underline;
   }
 
   h3 {
-    margin: 15px 10px;
+    margin: 5px 10px;
     font-size: 15px;
   }
 `;
@@ -72,14 +86,42 @@ export const DemoBLock = styled.div`
     height: 25px;
     width: 100px;
     border-radius: 15px;
+    cursor: pointer;
   }
 
   div p {
     margin: 0;
-    margin-top: 3px;
+    margin-top: 2px;
     padding: 0;
     text-align: center;
     font-size: 15px;
     font-weight: 650;
   }
+`;
+
+const underlineGrow = keyframes`
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+`;
+
+export const ProjUnderline = styled.div`
+  height: 2px;
+  width: 100%;
+  background: #fefefe;
+  transform: scaleX(0);
+  animation-name: ${(props) =>
+    props.underlineAni === true && props.currHover === props.hoverID
+      ? underlineGrow
+      : ""};
+  // animation-name: ${underlineGrow};
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  transform-origin: left;
+  margin-top: -5px;
+  padding: 0;
 `;

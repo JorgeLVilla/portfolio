@@ -21,13 +21,13 @@ export const StyledForm = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 70px;
 
   form input {
     height: 40px;
     width: 500px;
     margin: 10px;
-
+    border-radius: 5px;
     text-align: center;
   }
 `;
@@ -39,5 +39,7 @@ export const StyledSend = styled.div`
     background-color: #1a1d23;
     border-width: 1px;
     border-color: #0000;
+    cursor: pointer;
+    border: solid white 1px;
   }
 `;

@@ -6,20 +6,10 @@ export const StyledHome = styled.div`
   justify-content: center;
   align-items: center;
   height: 90vh;
+  margin-left: 100px;
 
   .hello {
     display: flex;
-  }
-
-  .hello img {
-    margin-left: 20px;
-    padding: 0;
-    height: 8em;
-    /* border: solid blue; */
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-self: center;
   }
 
   h1,
@@ -27,7 +17,6 @@ export const StyledHome = styled.div`
     color: #fefefe;
     margin: 0 0;
     padding: 0 0;
-    /* border: solid blue; */
   }
 
   h1 {
@@ -35,8 +24,9 @@ export const StyledHome = styled.div`
   }
 
   h5 {
-    font-size: 22.25px;
+    font-size: 21px;
   }
+
   img {
     margin-left: 80px;
     height: 480px;
