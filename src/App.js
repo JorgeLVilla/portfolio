@@ -6,6 +6,8 @@ import Projects from "./components/Projects";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import ParticlesBack from "./components/ParticlesBack";
+// import ScrollUp from "./components/ScrollUp/ScrollUp";
+import Resume from "./components/Resume/Resume";
 import { ContainerContent } from "./components/styles/ContainerContent.styled";
 import { ContainerNav } from "./components/styles/ContainerNav.styled";
 import "./App.css";
@@ -30,8 +32,10 @@ function App() {
         <ContainerContent>
           <Home />
           <About />
+          <Resume />
           <Projects />
           <Contact />
+          {/* <ScrollUp /> */}
         </ContainerContent>
       </>
     </ThemeProvider>

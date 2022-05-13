@@ -1,11 +1,11 @@
 import {
   PhoneContainer,
-  PhoneImg,
   StyledContact,
   StyledForm,
   StyledSend,
   ContactMasterContainer,
 } from "./styles/Contact.styled";
+import { rightAniVariant } from "./About";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { useInView } from "react-intersection-observer";
@@ -28,21 +28,12 @@ const contactVariant = {
 
 const submitVariant = {
   hover: {
-    scale: 1.2,
-  },
-  hidden: {
-    rotate: "0deg",
-  },
-  visible: {
-    rotate: "360deg",
-    transition: {
-      duration: 1,
-    },
+    scale: 1.1,
   },
 };
 
 export const Contact = () => {
-  const [contactContainerRef, contactContaineInView] = useInView({
+  const [contactContainerRef, contactContainerInView] = useInView({
     threshold: 0.4,
     triggerOnce: true,
   });
@@ -76,7 +67,7 @@ export const Contact = () => {
       as={motion.div}
       variants={contactVariant}
       initial="hidden"
-      animate={contactContaineInView ? "visible" : "hidden"}
+      animate={contactContainerInView ? "visible" : "hidden"}
     >
       <StyledContact>
         <div>
@@ -108,8 +99,13 @@ export const Contact = () => {
         </div>
       </StyledContact>
       <PhoneContainer>
-        {/* <PhoneImg /> */}
-        <img src={phoneIcon} alt="phone icon" />
+        <motion.img
+          src={phoneIcon}
+          alt="phone icon"
+          variants={rightAniVariant}
+          initial="hidden"
+          animate={contactContainerInView ? "visible" : "hidden"}
+        />
       </PhoneContainer>
     </ContactMasterContainer>
   );

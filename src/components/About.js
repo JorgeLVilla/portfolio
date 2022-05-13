@@ -18,6 +18,34 @@ const aboutVariant = {
   },
 };
 
+const leftAniVariant = {
+  hidden: {
+    x: "-20vh",
+    opacity: 0,
+  },
+  visible: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.9,
+    },
+  },
+};
+
+export const rightAniVariant = {
+  hidden: {
+    x: "20vh",
+    opacity: 0,
+  },
+  visible: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.7,
+    },
+  },
+};
+
 const About = () => {
   const [aboutContainerRef, aboutContainerInView] = useInView({
     threshold: 0.5,
@@ -26,10 +54,13 @@ const About = () => {
 
   return (
     <StyledAbout ref={aboutContainerRef}>
-      <img
+      <motion.img
         className="aboutIcon"
         src={aboutIcon}
         alt="person on couch with cat"
+        variants={leftAniVariant}
+        initial="hidden"
+        animate={aboutContainerInView ? "visible" : "hidden"}
       />
       <motion.div
         variants={aboutVariant}
@@ -55,7 +86,14 @@ const About = () => {
           <h3>Let's create something awesome!</h3>
         </a>
       </motion.div>
-      <img className="deskIcon" src={deskIcon} alt="person working on desk" />
+      <motion.img
+        className="deskIcon"
+        src={deskIcon}
+        alt="person working on desk"
+        variants={rightAniVariant}
+        initial="hidden"
+        animate={aboutContainerInView ? "visible" : "hidden"}
+      />
     </StyledAbout>
   );
 };

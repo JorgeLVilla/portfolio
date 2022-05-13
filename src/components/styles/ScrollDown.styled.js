@@ -13,5 +13,6 @@ export const StyledScroll = styled.div`
   img {
     margin-left: 10px;
     height: 30px;
+    border-radius: 50%;
   }
 `;

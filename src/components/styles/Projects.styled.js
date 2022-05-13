@@ -2,7 +2,6 @@ import styled, { keyframes } from "styled-components";
 
 export const StyledProjects = styled.div`
   height: 100vh;
-  /* background-color: green; */
 
   h1 {
     display: flex;
@@ -10,7 +9,6 @@ export const StyledProjects = styled.div`
     color: #fefefe;
     font-size: 95px;
     margin-top: 20px;
-    /* margin-bottom: 0; */
   }
 
   h3 {
@@ -41,7 +39,6 @@ export const ProjectsContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: blue; */
   margin-top: 50px;
 `;
 
@@ -49,13 +46,8 @@ export const SingleProjectCont = styled.div`
   height: 600px;
   width: 20%;
   margin: 0 2% 0 2%;
-  /* min-width: 300px; */
   background-color: #1a1d23;
-  /* background-color: red; */
   border-radius: 25px;
-  /* margin-top: 50px;
-  margin-left: 80px; */
-  /* margin-right: 80px; */
   align-items: center;
 
   img {

@@ -37,19 +37,31 @@ export const StyledForm = styled.div`
     margin-bottom: 10px;
     border-radius: 5px;
     text-align: center;
+    border: 0;
   }
 `;
 
 export const StyledSend = styled.div`
   input {
-    text-align: center;
+    background-color: #1a1d23;
+    border-color: green;
+    color: #fefefe;
+    transition: all 0.5s;
+    &:hover {
+      box-shadow: inset 18em 0 0 0 #5ea9be, inset -18em 0 0 0 #5ea9be;
+      border-color: #5ea9be;
+      color: #1a1d23;
+      background-color: #5ea9be;
+    }
+    cursor: pointer;
+  }
+  /* text-align: center;
     color: #fefefe;
     background-color: #1a1d23;
     border-width: 1px;
     border-color: #0000;
     cursor: pointer;
-    border: solid white 1px;
-  }
+    border: solid white 1px; */
 `;
 
 export const PhoneContainer = styled.div`
