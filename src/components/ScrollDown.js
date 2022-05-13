@@ -26,6 +26,9 @@ const scrollDownVariant = {
       duration: 0.5,
     },
   },
+  // hover: {
+  //   scale: 1.1,
+  // },
 };
 
 const ScrollDown = () => {
@@ -35,16 +38,19 @@ const ScrollDown = () => {
       variants={scrollDownVariant}
       initial="hidden"
       animate="visible"
+      // whileHover="hover"
     >
-      <p>Scroll down</p>
-      <motion.img
-        variants={arrowVariant}
-        initial="hidden"
-        animate="visible"
-        whileHover="hover"
-        src={arrowIcon}
-        alt="arrow"
-      />
+      <p>Contact me</p>
+      <a href="#contact-section">
+        <motion.img
+          variants={arrowVariant}
+          initial="hidden"
+          animate="visible"
+          whileHover="hover"
+          src={arrowIcon}
+          alt="arrow"
+        />
+      </a>
     </StyledScroll>
   );
 };

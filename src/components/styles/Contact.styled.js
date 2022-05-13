@@ -1,7 +1,12 @@
 import styled from "styled-components";
+import phoneIcon from "../../assets/phoneIcon.svg";
 
 export const StyledContact = styled.div`
-  height: 80vh;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  margin-left: 250px;
+  margin-top: 150px;
 
   h1 {
     font-size: 90px;
@@ -11,9 +16,9 @@ export const StyledContact = styled.div`
 
   h3 {
     color: #fefefe;
-    display: flex;
-    justify-content: center;
+    margin: 0 auto;
     text-align: center;
+    width: 80%;
   }
 `;
 
@@ -21,12 +26,15 @@ export const StyledForm = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 70px;
+  margin: 0px auto;
+  padding: 0;
+  height: 40%;
+  margin-top: 40px;
 
   form input {
     height: 40px;
-    width: 500px;
-    margin: 10px;
+    width: 550px;
+    margin-bottom: 10px;
     border-radius: 5px;
     text-align: center;
   }
@@ -42,4 +50,24 @@ export const StyledSend = styled.div`
     cursor: pointer;
     border: solid white 1px;
   }
+`;
+
+export const PhoneContainer = styled.div`
+  height: 80%;
+
+  img {
+    height: 480px;
+    margin-bottom: 100px;
+  }
+`;
+
+export const PhoneImg = styled.div`
+  background-image: url(${phoneIcon});
+  background-position: center;
+  background-repeat: no-repeat;
+`;
+
+export const ContactMasterContainer = styled.div`
+  display: flex;
+  height: 80vh;
 `;

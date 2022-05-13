@@ -17,6 +17,6 @@ export const data = {
   gameApp: {
     title: "Reactoads Party",
     description:
-      "The Party Pack app was one of the more challenging projects I've worked on in my apprenticeship. We were challenged to make an app using React Native. We used expo to use the phone emulator while we built the app. We created a collection of mini games that use the phone's sensors as the controller. We will continue to add games. I hope you have fun playing it. ",
+      "The Party Pack app was one of the more challenging projects I've worked on in my apprenticeship. We were challenged to make an app using React Native. We used expo to use the phone emulator while we built the app. We created a collection of mini games that use the phone's sensors as the controller.",
   },
 };
