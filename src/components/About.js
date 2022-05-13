@@ -51,7 +51,9 @@ const About = () => {
           Excited to work on awesome projects, and push the boundaries of
           Front-End development.
         </p>
-        <h3>Let's create something awesome!</h3>
+        <a href="#contact-section">
+          <h3>Let's create something awesome!</h3>
+        </a>
       </motion.div>
       <img className="deskIcon" src={deskIcon} alt="person working on desk" />
     </StyledAbout>

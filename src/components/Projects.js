@@ -9,6 +9,7 @@ import { useState } from "react";
 import pokeImg from "../assets/pokeImg.png";
 import newsAppImg from "../assets/newsAppImg.png";
 import gameApp from "../assets/gameApp.png";
+import amazon from "../assets/amazon.png";
 import { data } from "../utils/DataProjects";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
@@ -80,10 +81,24 @@ const Projects = () => {
           <h3>{data.pokeApp.description}</h3>
           <DemoBLock>
             <div>
-              <p>Github</p>
+              <a
+                href="https://github.com/Lap343/poke-app"
+                target="_blank"
+                without
+                rel="noreferrer"
+              >
+                <p>Github</p>
+              </a>
             </div>
             <div>
-              <p>Live Demo</p>
+              <a
+                href="https://pokedex-app-3fb51.web.app/"
+                target="_blank"
+                without
+                rel="noreferrer"
+              >
+                <p>Live Demo</p>
+              </a>
             </div>
           </DemoBLock>
         </SingleProjectCont>
@@ -108,27 +123,53 @@ const Projects = () => {
           <h3>{data.movieApp.description}</h3>
           <DemoBLock>
             <div>
-              <p>Github</p>
+              <a
+                href="https://github.com/krferrell/AngreeBirdz"
+                target="_blank"
+                without
+                rel="noreferrer"
+              >
+                <p>Github</p>
+              </a>
             </div>
             <div>
-              <p>Live Demo</p>
+              <a
+                href="https://reactoads-movie-app-7c45e.web.app/"
+                target="_blank"
+                without
+                rel="noreferrer"
+              >
+                <p>Live Demo</p>
+              </a>
             </div>
           </DemoBLock>
         </SingleProjectCont>
 
-        {/* <SingleProjectCont className="amazonContainer">
-          <img src={pokeImg} alt="pokemon app" />
-          <h1>{data.amazonApp.title}</h1>
+        <SingleProjectCont
+          className="amazonContainer"
+          as={motion.div}
+          variants={singleProjVariant}
+          whileHover="hover"
+          onMouseEnter={() => hoverAction("amazon")}
+          onMouseLeave={() => setUnderlineAni(false)}
+        >
+          <img src={amazon} alt="amazon clone app" />
+          <div className="amazonLineProj">
+            <h1>{data.amazonApp.title}</h1>
+            <ProjUnderline
+              underlineAni={underlineAni}
+              currHover={currHover}
+              hoverID="amazon"
+            />
+          </div>
           <h3>{data.amazonApp.description}</h3>
+          <span>Live demo coming soon!</span>
           <DemoBLock>
             <div>
               <p>Github</p>
             </div>
-            <div>
-              <p>Live Demo</p>
-            </div>
           </DemoBLock>
-        </SingleProjectCont> */}
+        </SingleProjectCont>
 
         <SingleProjectCont
           className="gameContainer"
@@ -147,14 +188,29 @@ const Projects = () => {
               hoverID="game"
             />
           </div>
-          <h3>{data.gameApp.description}</h3>
+          <h3>{data.gameApp.description} Live demo coming soon!</h3>
+          <span>Live demo coming soon!</span>
           <DemoBLock>
             <div>
-              <p>Github</p>
+              <a
+                href="https://github.com/krferrell/AngreeBirdz"
+                target="_blank"
+                without
+                rel="noreferrer"
+              >
+                <p>Github</p>
+              </a>
             </div>
-            <div>
-              <p>Live Demo</p>
-            </div>
+            {/* <div>
+              <a
+                href="https://github.com/krferrell/AngreeBirdz"
+                target="_blank"
+                without
+                rel="noreferrer"
+              >
+                <p>Live Demo</p>
+              </a>
+            </div> */}
           </DemoBLock>
         </SingleProjectCont>
       </ProjectsContainer>

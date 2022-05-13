@@ -12,7 +12,7 @@ const greetingVariant = {
     y: 0,
     opacity: 1,
     transition: {
-      duration: 1,
+      duration: 1.25,
     },
   },
 };
@@ -26,7 +26,7 @@ const heroVariant = {
     y: 0,
     opacity: 1,
     transition: {
-      duration: 1,
+      duration: 1.25,
     },
   },
 };

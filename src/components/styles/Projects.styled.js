@@ -2,6 +2,7 @@ import styled, { keyframes } from "styled-components";
 
 export const StyledProjects = styled.div`
   height: 100vh;
+  /* background-color: green; */
 
   h1 {
     display: flex;
@@ -9,7 +10,7 @@ export const StyledProjects = styled.div`
     color: #fefefe;
     font-size: 95px;
     margin-top: 20px;
-    margin-bottom: 0;
+    /* margin-bottom: 0; */
   }
 
   h3 {
@@ -29,24 +30,32 @@ export const StyledProjects = styled.div`
     width: 230px;
     margin: 0 auto;
   }
+
+  .amazonLineProj {
+    width: 206px;
+    margin: 0 auto;
+  }
 `;
 
 export const ProjectsContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 100px;
+  /* background-color: blue; */
+  margin-top: 50px;
 `;
 
 export const SingleProjectCont = styled.div`
   height: 600px;
-  width: 300px;
-  min-width: 300px;
+  width: 20%;
+  margin: 0 2% 0 2%;
+  /* min-width: 300px; */
   background-color: #1a1d23;
+  /* background-color: red; */
   border-radius: 25px;
-  margin-top: 50px;
-  margin-left: 80px;
-  margin-right: 80px;
+  /* margin-top: 50px;
+  margin-left: 80px; */
+  /* margin-right: 80px; */
   align-items: center;
 
   img {
@@ -74,6 +83,15 @@ export const SingleProjectCont = styled.div`
     margin: 5px 10px;
     font-size: 15px;
   }
+
+  span {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    color: #fefefe;
+    text-decoration: underline;
+    font-weight: bolder;
+  }
 `;
 
 export const DemoBLock = styled.div`
@@ -96,6 +114,8 @@ export const DemoBLock = styled.div`
     text-align: center;
     font-size: 15px;
     font-weight: 650;
+    /* background-color: green; */
+    color: #000000;
   }
 `;
 
