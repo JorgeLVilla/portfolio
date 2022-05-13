@@ -98,6 +98,19 @@ const Nav = () => {
           </a>
         </LinkBox>
         <LinkBox
+          onMouseEnter={() => hoverAction("resume")}
+          onMouseLeave={() => setUnderlineAni(false)}
+        >
+          <a href="#resume-section">
+            <Links>Resume</Links>
+            <LinkUnderline
+              underlineAni={underlineAni}
+              currHover={currHover}
+              hoverID="resume"
+            />
+          </a>
+        </LinkBox>
+        <LinkBox
           onMouseEnter={() => hoverAction("contact")}
           onMouseLeave={() => setUnderlineAni(false)}
         >
