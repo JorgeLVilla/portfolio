@@ -3,7 +3,7 @@ import Nav from "./components/Nav/Nav.js";
 import Home from "./components/Home/Home";
 import Projects from "./components/Projects/Projects";
 import About from "./components/About";
-import Contact from "./components/Contact";
+import Contact from "./components/Contact/Contact";
 import ParticlesBack from "./components/ParticlesBack";
 // import ScrollUp from "./components/ScrollUp/ScrollUp";
 import Resume from "./components/Resume/Resume";
