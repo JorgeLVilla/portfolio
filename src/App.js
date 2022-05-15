@@ -2,7 +2,7 @@ import GlobalStyles from "./components/styles/Global";
 import Nav from "./components/Nav/Nav.js";
 import Home from "./components/Home/Home";
 import Projects from "./components/Projects/Projects";
-import About from "./components/About";
+import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
 import ParticlesBack from "./components/ParticlesBack";
 // import ScrollUp from "./components/ScrollUp/ScrollUp";

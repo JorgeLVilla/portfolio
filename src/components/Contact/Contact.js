@@ -6,7 +6,7 @@ import {
   ContactMasterContainer,
 } from "./styles";
 import { contactVariant, submitVariant } from "./Variants";
-import { rightAniVariant } from "../About";
+import { rightAniVariant } from "../About/Variants";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { useInView } from "react-intersection-observer";
