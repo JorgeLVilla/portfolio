@@ -1,4 +1,4 @@
-import { StyledHome } from "./Home.styled";
+import { StyledHome } from "./styles";
 import heroIcon from "../../assets/heroIcon.svg";
 import ScrollDown from "../../components/ScrollDown";
 import { motion } from "framer-motion";
