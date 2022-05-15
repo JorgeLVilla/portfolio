@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.dfcb1a1f.css",
+    "main.js": "/static/js/main.ba644664.js",
+    "static/js/937.cc77dee8.chunk.js": "/static/js/937.cc77dee8.chunk.js",
+    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/amazon.png": "/static/media/amazon.07330f104bb7501b2fd0.png",
+    "static/media/pokeImg.png": "/static/media/pokeImg.48230b1672d290bd76fc.png",
+    "static/media/newsAppImg.png": "/static/media/newsAppImg.a3ee14c3666b7503a51b.png",
+    "static/media/gameApp.png": "/static/media/gameApp.f39dad814a3826a9d5af.png",
+    "static/media/phoneIcon.svg": "/static/media/phoneIcon.a4ee949d5e1396b96f59449a2762702a.svg",
+    "static/media/aboutIcon.svg": "/static/media/aboutIcon.3ae31027d1bec7d0053393a50357cf2d.svg",
+    "static/media/heroIcon.svg": "/static/media/heroIcon.b6551a9d56b4bf6338504b0fae566c49.svg",
+    "static/media/deskIcon.svg": "/static/media/deskIcon.99c7bef9d23d844d78e7d7bdaa8492cf.svg",
+    "static/media/keyboardIcon.svg": "/static/media/keyboardIcon.bebb6a0accc78e77c9034dc3e71f07db.svg",
+    "static/media/githubIcon.svg": "/static/media/githubIcon.60c6f2aec6d5c68cb00e317139e8af6c.svg",
+    "static/media/twitterIcon.svg": "/static/media/twitterIcon.17e04658bf5f0ae7ebfa046e1add77d7.svg",
+    "static/media/arrowIcon.svg": "/static/media/arrowIcon.ab24f3efa2f74e0c2d557c325af9d0ec.svg",
+    "index.html": "/index.html",
+    "main.dfcb1a1f.css.map": "/static/css/main.dfcb1a1f.css.map",
+    "main.ba644664.js.map": "/static/js/main.ba644664.js.map",
+    "937.cc77dee8.chunk.js.map": "/static/js/937.cc77dee8.chunk.js.map",
+    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dfcb1a1f.css",
+    "static/js/main.ba644664.js"
+  ]
+}
