@@ -1,12 +1,14 @@
 import styled from "styled-components";
 import phoneIcon from "../../assets/phoneIcon.svg";
+import { uiSize } from "../../utils/mobileSize";
 
 export const StyledContact = styled.div`
-  height: 500px;
+  /* height: 500px; */
   display: flex;
   justify-content: center;
-  margin-left: 250px;
+  /* margin-left: 250px; */
   margin-top: 150px;
+  /* background-color: blue; */
 
   h1 {
     font-size: 90px;
@@ -19,6 +21,19 @@ export const StyledContact = styled.div`
     margin: 0 auto;
     text-align: center;
     width: 80%;
+  }
+
+  @media ${uiSize.mobile} {
+    /* width: 25%; */
+    /* margin: 0 au to; */
+    h1 {
+      font-size: 4rem;
+    }
+    h3 {
+      font-size: 1.25rem;
+      width: 50%;
+    }
+    margin-top: 0px;
   }
 `;
 
@@ -38,6 +53,11 @@ export const StyledForm = styled.div`
     border-radius: 5px;
     text-align: center;
     border: 0;
+  }
+  @media ${uiSize.mobile} {
+    form input {
+      width: 325px;
+    }
   }
 `;
 
@@ -66,10 +86,14 @@ export const StyledSend = styled.div`
 
 export const PhoneContainer = styled.div`
   height: 80%;
+  /* background-color: blue; */
 
   img {
     height: 480px;
     margin-bottom: 100px;
+  }
+  @media ${uiSize.mobile} {
+    display: none;
   }
 `;
 
@@ -81,5 +105,13 @@ export const PhoneImg = styled.div`
 
 export const ContactMasterContainer = styled.div`
   display: flex;
-  height: 80vh;
+  justify-content: center;
+  margin: 20px 0 50px 0;
+  /* height: 80vh; */
+
+  @media ${uiSize.mobile} {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 50px;
+  }
 `;

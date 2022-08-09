@@ -4,8 +4,9 @@ import {
   SingleProjectCont,
   DemoBLock,
   ProjUnderline,
+  DescriptionText,
 } from "./styles";
-import { projectsVariant, singleProjVariant } from "./Variants";
+import { projectsVariant, singleProjVariant } from "./variants";
 import { useState } from "react";
 import pokeImg from "../../assets/pokeImg.png";
 import newsAppImg from "../../assets/newsAppImg.png";
@@ -16,7 +17,7 @@ import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 
 const Projects = () => {
-  const [projectsContainerRef, projectsContaineInView] = useInView({
+  const [projectsContainerRef, projectsContainerInView] = useInView({
     threshold: 0.4,
     triggerOnce: true,
   });
@@ -31,14 +32,23 @@ const Projects = () => {
   };
   return (
     <StyledProjects
-      ref={projectsContainerRef}
-      as={motion.div}
-      variants={projectsVariant}
-      initial="hidden"
-      animate={projectsContaineInView ? "visible" : "hidden"}
+    // ref={projectsContainerRef}
+    // as={motion.div}
+    // variants={projectsVariant}
+    // initial="hidden"
+    // animate={projectsContainerInView ? "visible" : "hidden"}
     >
       <div>
-        <h1 id="projects-section">Projects.</h1>
+        <h1
+          id="projects-section"
+          ref={projectsContainerRef}
+          as={motion.div}
+          variants={projectsVariant}
+          initial="hidden"
+          animate={projectsContainerInView ? "visible" : "hidden"}
+        >
+          Projects.
+        </h1>
       </div>
       <ProjectsContainer>
         <SingleProjectCont
@@ -59,7 +69,9 @@ const Projects = () => {
               hoverID="poke"
             />
           </div>
-          <h3>{data.pokeApp.description}</h3>
+          <DescriptionText>
+            <h3>{data.pokeApp.description}</h3>
+          </DescriptionText>
           <DemoBLock>
             <div>
               <a
@@ -101,7 +113,9 @@ const Projects = () => {
               hoverID="movie"
             />
           </div>
-          <h3>{data.movieApp.description}</h3>
+          <DescriptionText>
+            <h3>{data.movieApp.description}</h3>
+          </DescriptionText>
           <DemoBLock>
             <div>
               <a
@@ -143,7 +157,9 @@ const Projects = () => {
               hoverID="amazon"
             />
           </div>
-          <h3>{data.amazonApp.description}</h3>
+          <DescriptionText>
+            <h3>{data.amazonApp.description}</h3>
+          </DescriptionText>
           <span>Live demo coming soon!</span>
           <DemoBLock>
             <div>
@@ -169,7 +185,9 @@ const Projects = () => {
               hoverID="game"
             />
           </div>
-          <h3>{data.gameApp.description} Live demo coming soon!</h3>
+          <DescriptionText>
+            <h3>{data.gameApp.description} Live demo coming soon!</h3>
+          </DescriptionText>
           <span>Live demo coming soon!</span>
           <DemoBLock>
             <div>
@@ -182,7 +200,7 @@ const Projects = () => {
                 <p>Github</p>
               </a>
             </div>
-            {/* <div>
+            <div>
               <a
                 href="https://github.com/krferrell/AngreeBirdz"
                 target="_blank"
@@ -191,7 +209,7 @@ const Projects = () => {
               >
                 <p>Live Demo</p>
               </a>
-            </div> */}
+            </div>
           </DemoBLock>
         </SingleProjectCont>
       </ProjectsContainer>
