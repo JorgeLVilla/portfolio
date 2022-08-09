@@ -10,23 +10,26 @@ import Resume from "./components/Resume/Resume";
 import { ContainerContent } from "./components/styles/ContainerContent.styled";
 import { ContainerNav } from "./components/styles/ContainerNav.styled";
 import "./App.css";
+import { AppContainer } from "./components/styles/AppContainer";
 
 function App() {
   return (
     <>
       <ParticlesBack />
       <GlobalStyles />
-      <ContainerNav>
-        <Nav />
-      </ContainerNav>
-      <ContainerContent>
-        <Home />
-        <About />
-        <Resume />
-        <Projects />
-        <Contact />
-        {/* <ScrollUp /> */}
-      </ContainerContent>
+      <AppContainer>
+        <ContainerNav>
+          <Nav />
+        </ContainerNav>
+        <ContainerContent>
+          <Home />
+          <About />
+          {/* <Resume /> */}
+          <Projects />
+          <Contact />
+          {/* <ScrollUp /> */}
+        </ContainerContent>
+      </AppContainer>
     </>
   );
 }

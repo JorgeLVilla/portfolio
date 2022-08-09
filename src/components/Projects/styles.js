@@ -1,13 +1,16 @@
 import styled, { keyframes } from "styled-components";
+import { uiSize } from "../../utils/mobileSize";
 
 export const StyledProjects = styled.div`
-  height: 100vh;
+  /* height: 100vh; */
+  /* background-color: white; */
+  margin-bottom: 100px;
 
   h1 {
     display: flex;
     justify-content: center;
     color: #fefefe;
-    font-size: 95px;
+    font-size: 4rem;
     margin-top: 20px;
   }
 
@@ -40,18 +43,34 @@ export const ProjectsContainer = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 50px;
+  /* background-color: red; */
+  @media ${uiSize.mobile} {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const SingleProjectCont = styled.div`
-  height: 600px;
-  width: 20%;
-  margin: 0 2% 0 2%;
+  height: 700px;
+  width: 300px !important;
+  margin: 0 30px;
   background-color: #1a1d23;
+  /* background-color: blue; */
   border-radius: 25px;
   align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media ${uiSize.mobile} {
+    margin: 20px 10px;
+  }
 
   img {
     height: 31%;
+    width: 100%;
     border-radius: 15px;
   }
 
@@ -59,20 +78,14 @@ export const SingleProjectCont = styled.div`
     margin: 0px 0px;
   }
 
-  h1,
-  h3 {
-    margin: 0 auto;
-    padding: 0 10px;
-    text-align: center;
-  }
-
   h1 {
+    text-align: center;
+    padding: 0 10px;
     font-size: 25px;
     margin-top: 15px;
   }
 
   h3 {
-    margin: 5px 10px;
     font-size: 15px;
   }
 
@@ -84,12 +97,16 @@ export const SingleProjectCont = styled.div`
     text-decoration: underline;
     font-weight: bolder;
   }
+  /* @media ${uiSize.mobile} {
+    width: 90%;
+  } */
 `;
 
 export const DemoBLock = styled.div`
   display: flex;
   justify-content: space-around;
-  margin-top: 20px;
+  align-self: center;
+  margin-bottom: 10px;
 
   div {
     background-color: #fefefe;
@@ -97,6 +114,7 @@ export const DemoBLock = styled.div`
     width: 100px;
     border-radius: 15px;
     cursor: pointer;
+    margin: 10px;
   }
 
   div p {
@@ -136,4 +154,15 @@ export const ProjUnderline = styled.div`
   transform-origin: left;
   margin-top: -5px;
   padding: 0;
+`;
+
+export const DescriptionText = styled.div`
+  /* background-color: coral; */
+  padding: 5px 10px;
+  height: 45%;
+  margin: 10px;
+
+  @media ${uiSize.mobile} {
+    text-align: center;
+  }
 `;

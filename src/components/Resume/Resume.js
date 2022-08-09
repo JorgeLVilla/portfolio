@@ -13,30 +13,11 @@ import {
   InfoInsideBox,
   IndivInfo,
 } from "./styles";
+import { resumeVariant, hoverSectionVariant } from "./variants";
 import { ResumeUnderline } from "./styles";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-
-const resumeVariant = {
-  hidden: {
-    y: "20vh",
-    opacity: 0,
-  },
-  visible: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      duration: 0.7,
-    },
-  },
-};
-
-const hoverSectionVariant = {
-  hover: {
-    scale: 1.05,
-  },
-};
 
 const Resume = () => {
   const [underlineAni, setUnderlineAni] = useState(false);
@@ -79,10 +60,9 @@ const Resume = () => {
           </h1>
           <h3>
             Jorge has recently started his journey in the tech industry as an
-            apprentice developer. Self-motivated learner with strong
-            organization, time management and communication skills. Able to work
-            independently and collaboratively in a team with a meticulous
-            attention to detail.
+            apprentice developer. Self-motivated learner with strong time
+            management, and communication skills. Able to work independently and
+            collaboratively in a team with meticulous attention to detail.
           </h3>
         </SummaryBox>
         <KeySkills
@@ -92,23 +72,37 @@ const Resume = () => {
           onMouseEnter={() => hoverAction("keySkills")}
           onMouseLeave={() => setUnderlineAni(false)}
         >
-          <TitleSkills>
+          <h1>
             Key Skills
             <ResumeUnderline
               underlineAni={underlineAni}
               currHover={currHover}
               hoverID="keySkills"
             />
-          </TitleSkills>
+          </h1>
 
           <SkillsBox>
-            <IndivBoxes>React</IndivBoxes>
-            <IndivBoxes>JavaScript</IndivBoxes>
-            <IndivBoxes>TypeScript</IndivBoxes>
-            <IndivBoxes>Semantic HTML</IndivBoxes>
-            <IndivBoxes>Advanced CSS</IndivBoxes>
-            <IndivBoxes>Figma</IndivBoxes>
-            <IndivBoxes>Adobe Creative Suite</IndivBoxes>
+            <IndivBoxes>
+              <p>React</p>
+            </IndivBoxes>
+            <IndivBoxes>
+              <p>JavaScript</p>
+            </IndivBoxes>
+            <IndivBoxes>
+              <p>TypeScript</p>
+            </IndivBoxes>
+            <IndivBoxes>
+              <p>Semantic HTML</p>
+            </IndivBoxes>
+            <IndivBoxes>
+              <p>Advanced CSS</p>
+            </IndivBoxes>
+            <IndivBoxes>
+              <p>Figma</p>
+            </IndivBoxes>
+            <IndivBoxes>
+              <p>Adobe Creative Suite</p>
+            </IndivBoxes>
           </SkillsBox>
         </KeySkills>
       </RowContainersOne>

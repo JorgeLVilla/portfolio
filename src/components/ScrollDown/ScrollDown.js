@@ -1,7 +1,7 @@
-import { StyledScroll } from "./ScrollDown.styled";
+import { StyledScroll } from "./styles";
 import arrowIcon from "../../assets/arrowIcon.svg";
 import { motion } from "framer-motion";
-import { arrowVariant, scrollDownVariant } from "./Variants";
+import { arrowVariant, scrollDownVariant } from "./variants";
 
 const ScrollDown = () => {
   return (
@@ -18,7 +18,7 @@ const ScrollDown = () => {
           variants={arrowVariant}
           initial="hidden"
           animate="visible"
-          whileHover="hover"
+          // whileHover="hover"
           src={arrowIcon}
           alt="arrow"
         />

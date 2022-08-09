@@ -1,9 +1,9 @@
-import { StyledAbout } from "./styles";
+import { StyledAbout, AboutContainer } from "./styles";
 import aboutIcon from "../../assets/aboutIcon.svg";
 import deskIcon from "../../assets/deskIcon.svg";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
-import { aboutVariant, leftAniVariant, rightAniVariant } from "./Variants";
+import { aboutVariant, leftAniVariant, rightAniVariant } from "./variants";
 
 const About = () => {
   const [aboutContainerRef, aboutContainerInView] = useInView({
@@ -21,7 +21,9 @@ const About = () => {
         initial="hidden"
         animate={aboutContainerInView ? "visible" : "hidden"}
       />
-      <motion.div
+      {/* <motion.div */}
+      <AboutContainer
+        as={motion.div}
         variants={aboutVariant}
         initial="hidden"
         animate={aboutContainerInView ? "visible" : "hidden"}
@@ -44,7 +46,8 @@ const About = () => {
         <a href="#contact-section">
           <h3>Let's create something awesome!</h3>
         </a>
-      </motion.div>
+        {/* </motion.div> */}
+      </AboutContainer>
       <motion.img
         className="deskIcon"
         src={deskIcon}
